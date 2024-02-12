@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #0d0f11;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  router-outlet {
+    padding: 15px;
+  }
+  
+  footer {
+    background-color: #000; /* Change to black or any other color you prefer */
+    color: #fff; /* Set text color to white or any contrasting color */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+  
+  footer p {
+    margin: 0;
+  }

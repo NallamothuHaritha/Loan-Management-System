@@ -79,7 +79,8 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Loan-Management-System:build"
+            "browserTarget": "Loan-Management-System:build",
+            "proxyConfig": "src/proxy.config.json"
           }
         },
         "test": {
@@ -101,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "278010db-e766-424b-9ef0-027cec15fe86"
   }
 }

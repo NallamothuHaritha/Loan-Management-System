@@ -1,0 +1,20 @@
+<h1> Welcome  {{username}} </h1>
+
+<h1> your registered ID  {{cid}} </h1>
+<!-- Logout button -->
+<button (click)="logout()">Logout</button>
+
+
+<div class="file-upload-container">
+    <h2>File Upload Dashboard</h2>
+    <div *ngFor="let fileUpload of fileUploads; let i = index" class="file-upload-row">
+        <div class="file-input-container">
+          <select [(ngModel)]="fileUploads[i].type" (ngModelChange)="onTypeSelected(fileUploads[i].type, i)">
+            <option value="">Select Type</option>
+            <option *ngFor="let type of getAvailableTypes(i)" [value]="type">{{ type }}</option>
+          </select>
+          <input type="file" (change)="onFileSelected($event, i)" accept=".doc,.docx,application/pdf">
+        </div>
+    <button (click)="onSubmit()">Upload Files</button>
+    
+</div>
